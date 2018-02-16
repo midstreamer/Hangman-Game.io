@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <title>Hangman Game</title>
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid"></div>
+    <div class="container">
+        <h1 class="display-4">Hangman</h1>
+        <div class="row">
+            <div class="col-lg-5"></div>
+            <div class="col-lg-8">
+
+                
+                <p>Comic Book Character Hangman!</p><br><br><br>
+                <div id="gameboard">
+                    <input type="hidden" id="correct-guesses" /><br>
+                    <form>
+                        <input type="hidden" id="correct-answer" value="" />
+                        <p id="letter-panels"></p><br><br><br><br>
+
+                        <p>Type a letter into the box below and click the Guess button to make a guess</p><br><br>
+                        <p id="game-controls"><br>
+                            <input type="text" id="guess-character" size="1" value="" />
+                            <input type="button" id="submit-guess" value="Guess" onclick="takeGuess();" />
+                        </p><br>
+                    </form><br><br><br><br><br>
+                    <p><input type="text" id="guesses-remaining" /> Remaining Guesses</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+<footer>
+    <nav class="navbar fixed-bottom navbar-light bg-light">
+        <a class="navbar-brand" href="#">Coding Boot Camp © 2016. All Rights Reserved</a>
+    </nav>
+</footer>
+<script src="./assets/javascript/game.js" alt="Javascript"></script>
+
+</html>
